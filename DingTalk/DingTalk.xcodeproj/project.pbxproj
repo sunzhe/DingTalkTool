@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8401C09D1FC6B4350011E47F /* UIImage+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C09B1FC6B4350011E47F /* UIImage+JFUtil.h */; };
+		8401C09E1FC6B4350011E47F /* UIImage+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C09C1FC6B4350011E47F /* UIImage+JFUtil.m */; };
+		8401C0A11FC6B5470011E47F /* ALAsset+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C09F1FC6B5470011E47F /* ALAsset+JFUtil.h */; };
+		8401C0A21FC6B5470011E47F /* ALAsset+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0A01FC6B5470011E47F /* ALAsset+JFUtil.m */; };
+		8401C0A91FC6B5620011E47F /* DTCameraSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0A51FC6B5620011E47F /* DTCameraSettingViewController.h */; };
+		8401C0AA1FC6B5620011E47F /* DTCameraSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0A61FC6B5620011E47F /* DTCameraSettingViewController.m */; };
+		8401C0AB1FC6B5620011E47F /* DTCameraHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0A71FC6B5620011E47F /* DTCameraHook.h */; };
+		8401C0AC1FC6B5620011E47F /* DTCameraHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0A81FC6B5620011E47F /* DTCameraHook.m */; };
+		8401C0C71FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0B31FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.h */; };
+		8401C0C81FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0B41FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.m */; };
+		8401C0C91FC6B61F0011E47F /* QBAssetsCollectionFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0B51FC6B61F0011E47F /* QBAssetsCollectionFooterView.h */; };
+		8401C0CA1FC6B61F0011E47F /* QBAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0B61FC6B61F0011E47F /* QBAssetsCollectionFooterView.m */; };
+		8401C0CB1FC6B61F0011E47F /* QBAssetsCollectionOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0B71FC6B61F0011E47F /* QBAssetsCollectionOverlayView.h */; };
+		8401C0CC1FC6B61F0011E47F /* QBAssetsCollectionOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0B81FC6B61F0011E47F /* QBAssetsCollectionOverlayView.m */; };
+		8401C0CD1FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0B91FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.h */; };
+		8401C0CE1FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0BA1FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.m */; };
+		8401C0CF1FC6B61F0011E47F /* QBAssetsCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0BB1FC6B61F0011E47F /* QBAssetsCollectionViewCell.h */; };
+		8401C0D01FC6B61F0011E47F /* QBAssetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0BC1FC6B61F0011E47F /* QBAssetsCollectionViewCell.m */; };
+		8401C0D11FC6B61F0011E47F /* QBAssetsCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0BD1FC6B61F0011E47F /* QBAssetsCollectionViewController.h */; };
+		8401C0D21FC6B61F0011E47F /* QBAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0BE1FC6B61F0011E47F /* QBAssetsCollectionViewController.m */; };
+		8401C0D31FC6B61F0011E47F /* QBAssetsCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0BF1FC6B61F0011E47F /* QBAssetsCollectionViewLayout.h */; };
+		8401C0D41FC6B61F0011E47F /* QBAssetsCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0C01FC6B61F0011E47F /* QBAssetsCollectionViewLayout.m */; };
+		8401C0D51FC6B61F0011E47F /* QBImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0C11FC6B61F0011E47F /* QBImagePickerController.h */; };
+		8401C0D61FC6B61F0011E47F /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0C21FC6B61F0011E47F /* QBImagePickerController.m */; };
+		8401C0D71FC6B61F0011E47F /* QBImagePickerGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0C31FC6B61F0011E47F /* QBImagePickerGroupCell.h */; };
+		8401C0D81FC6B61F0011E47F /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0C41FC6B61F0011E47F /* QBImagePickerGroupCell.m */; };
+		8401C0D91FC6B61F0011E47F /* QBImagePickerThumbnailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401C0C51FC6B61F0011E47F /* QBImagePickerThumbnailView.h */; };
+		8401C0DA1FC6B61F0011E47F /* QBImagePickerThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401C0C61FC6B61F0011E47F /* QBImagePickerThumbnailView.m */; };
+		848343FC1F7A6181009D5A69 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848343FB1F7A6181009D5A69 /* MethodTraceConfig.plist */; };
+		848343FF1F7A6181009D5A69 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 848343FE1F7A6181009D5A69 /* put ipa or app here */; };
+		848344071F7A6181009D5A69 /* libDingTalkDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 848344061F7A6181009D5A69 /* libDingTalkDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8483440C1F7A6181009D5A69 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483440B1F7A6181009D5A69 /* Cycript.framework */; };
+		8483440E1F7A6181009D5A69 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483440D1F7A6181009D5A69 /* JavaScriptCore.framework */; };
+		848344101F7A6181009D5A69 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8483440F1F7A6181009D5A69 /* RevealServer.framework */; };
+		848344121F7A6181009D5A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848344111F7A6181009D5A69 /* Foundation.framework */; };
+		848344141F7A6181009D5A69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848344131F7A6181009D5A69 /* UIKit.framework */; };
+		848344181F7A6181009D5A69 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 848344171F7A6181009D5A69 /* ANYMethodLog.h */; };
+		8483441A1F7A6181009D5A69 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 848344191F7A6181009D5A69 /* ANYMethodLog.m */; };
+		8483441C1F7A6181009D5A69 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 8483441B1F7A6181009D5A69 /* MethodTrace.h */; };
+		8483441E1F7A6181009D5A69 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8483441D1F7A6181009D5A69 /* MethodTrace.m */; };
+		848344231F7A6181009D5A69 /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 848344221F7A6181009D5A69 /* CaptainHook.h */; };
+		848344261F7A6181009D5A69 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 848344251F7A6181009D5A69 /* AntiAntiDebug.m */; };
+		848344291F7A6181009D5A69 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 848344281F7A6181009D5A69 /* fishhook.c */; };
+		8483442B1F7A6181009D5A69 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 8483442A1F7A6181009D5A69 /* fishhook.h */; };
+		8483442E1F7A6181009D5A69 /* DingTalkDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8483442D1F7A6181009D5A69 /* DingTalkDylib.mm */; };
+		848344301F7A6181009D5A69 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8483442F1F7A6181009D5A69 /* DingTalkDylib.h */; };
+		848344321F7A6181009D5A69 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 848344311F7A6181009D5A69 /* DingTalkDylib.m */; };
+		84B336131FC6A96200445D4F /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B3360E1FC6A96200445D4F /* Header.h */; };
+		84B336441FC6AFAE00445D4F /* DTWIFIHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B336191FC6AFAE00445D4F /* DTWIFIHook.h */; };
+		84B336451FC6AFAE00445D4F /* DTWIFIHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3361A1FC6AFAE00445D4F /* DTWIFIHook.m */; };
+		84B336461FC6AFAE00445D4F /* DTWifiModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B3361C1FC6AFAE00445D4F /* DTWifiModel.h */; };
+		84B336471FC6AFAE00445D4F /* DTWifiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3361D1FC6AFAE00445D4F /* DTWifiModel.m */; };
+		84B336481FC6AFAE00445D4F /* DTWifiSettingSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B3361E1FC6AFAE00445D4F /* DTWifiSettingSession.h */; };
+		84B336491FC6AFAE00445D4F /* DTWifiSettingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3361F1FC6AFAE00445D4F /* DTWifiSettingSession.m */; };
+		84B3364A1FC6AFAE00445D4F /* DTWifiSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B336211FC6AFAE00445D4F /* DTWifiSettingViewController.h */; };
+		84B3364B1FC6AFAE00445D4F /* DTWifiSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B336221FC6AFAE00445D4F /* DTWifiSettingViewController.m */; };
+		84B3365A1FC6AFAE00445D4F /* DTGPSSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B3363B1FC6AFAE00445D4F /* DTGPSSettingViewController.h */; };
+		84B3365B1FC6AFAE00445D4F /* DTGPSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3363C1FC6AFAE00445D4F /* DTGPSSettingViewController.m */; };
+		84B3365C1FC6AFAE00445D4F /* DTGPSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B3363F1FC6AFAE00445D4F /* DTGPSButton.h */; };
+		84B3365D1FC6AFAE00445D4F /* DTGPSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B336401FC6AFAE00445D4F /* DTGPSButton.m */; };
+		84B3365E1FC6AFAE00445D4F /* DTWifiHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B336421FC6AFAE00445D4F /* DTWifiHeaderView.h */; };
+		84B3365F1FC6AFAE00445D4F /* DTWifiHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B336431FC6AFAE00445D4F /* DTWifiHeaderView.m */; };
+		84B336631FC6B2CB00445D4F /* JF_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B336611FC6B2CB00445D4F /* JF_Helper.h */; };
+		84B336641FC6B2CB00445D4F /* JF_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B336621FC6B2CB00445D4F /* JF_Helper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848344081F7A6181009D5A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848343ED1F7A6181009D5A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 848344051F7A6181009D5A69;
+			remoteInfo = DingTalkDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		848343F51F7A6181009D5A69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				848344071F7A6181009D5A69 /* libDingTalkDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8401C09B1FC6B4350011E47F /* UIImage+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JFUtil.h"; sourceTree = "<group>"; };
+		8401C09C1FC6B4350011E47F /* UIImage+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JFUtil.m"; sourceTree = "<group>"; };
+		8401C09F1FC6B5470011E47F /* ALAsset+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+JFUtil.h"; sourceTree = "<group>"; };
+		8401C0A01FC6B5470011E47F /* ALAsset+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAsset+JFUtil.m"; sourceTree = "<group>"; };
+		8401C0A51FC6B5620011E47F /* DTCameraSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCameraSettingViewController.h; sourceTree = "<group>"; };
+		8401C0A61FC6B5620011E47F /* DTCameraSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCameraSettingViewController.m; sourceTree = "<group>"; };
+		8401C0A71FC6B5620011E47F /* DTCameraHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCameraHook.h; sourceTree = "<group>"; };
+		8401C0A81FC6B5620011E47F /* DTCameraHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCameraHook.m; sourceTree = "<group>"; };
+		8401C0B01FC6B61F0011E47F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
+		8401C0B11FC6B61F0011E47F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
+		8401C0B31FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionCheckmarkView.h; sourceTree = "<group>"; };
+		8401C0B41FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionCheckmarkView.m; sourceTree = "<group>"; };
+		8401C0B51FC6B61F0011E47F /* QBAssetsCollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionFooterView.h; sourceTree = "<group>"; };
+		8401C0B61FC6B61F0011E47F /* QBAssetsCollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionFooterView.m; sourceTree = "<group>"; };
+		8401C0B71FC6B61F0011E47F /* QBAssetsCollectionOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionOverlayView.h; sourceTree = "<group>"; };
+		8401C0B81FC6B61F0011E47F /* QBAssetsCollectionOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionOverlayView.m; sourceTree = "<group>"; };
+		8401C0B91FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionVideoIndicatorView.h; sourceTree = "<group>"; };
+		8401C0BA1FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionVideoIndicatorView.m; sourceTree = "<group>"; };
+		8401C0BB1FC6B61F0011E47F /* QBAssetsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewCell.h; sourceTree = "<group>"; };
+		8401C0BC1FC6B61F0011E47F /* QBAssetsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewCell.m; sourceTree = "<group>"; };
+		8401C0BD1FC6B61F0011E47F /* QBAssetsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewController.h; sourceTree = "<group>"; };
+		8401C0BE1FC6B61F0011E47F /* QBAssetsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewController.m; sourceTree = "<group>"; };
+		8401C0BF1FC6B61F0011E47F /* QBAssetsCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewLayout.h; sourceTree = "<group>"; };
+		8401C0C01FC6B61F0011E47F /* QBAssetsCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewLayout.m; sourceTree = "<group>"; };
+		8401C0C11FC6B61F0011E47F /* QBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerController.h; sourceTree = "<group>"; };
+		8401C0C21FC6B61F0011E47F /* QBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerController.m; sourceTree = "<group>"; };
+		8401C0C31FC6B61F0011E47F /* QBImagePickerGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerGroupCell.h; sourceTree = "<group>"; };
+		8401C0C41FC6B61F0011E47F /* QBImagePickerGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerGroupCell.m; sourceTree = "<group>"; };
+		8401C0C51FC6B61F0011E47F /* QBImagePickerThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerThumbnailView.h; sourceTree = "<group>"; };
+		8401C0C61FC6B61F0011E47F /* QBImagePickerThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerThumbnailView.m; sourceTree = "<group>"; };
+		848343F81F7A6181009D5A69 /* DingTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848343FB1F7A6181009D5A69 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		848343FE1F7A6181009D5A69 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		848344001F7A6181009D5A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848344061F7A6181009D5A69 /* libDingTalkDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDingTalkDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		8483440B1F7A6181009D5A69 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		8483440D1F7A6181009D5A69 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		8483440F1F7A6181009D5A69 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		848344111F7A6181009D5A69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		848344131F7A6181009D5A69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		848344171F7A6181009D5A69 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		848344191F7A6181009D5A69 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		8483441B1F7A6181009D5A69 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		8483441D1F7A6181009D5A69 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		848344201F7A6181009D5A69 /* DingTalkDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingTalkDylib-Prefix.pch"; sourceTree = "<group>"; };
+		848344221F7A6181009D5A69 /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CaptainHook.h; path = CaptainHook/CaptainHook.h; sourceTree = "<group>"; };
+		848344251F7A6181009D5A69 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		848344281F7A6181009D5A69 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		8483442A1F7A6181009D5A69 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		8483442C1F7A6181009D5A69 /* DingTalkDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = DingTalkDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8483442D1F7A6181009D5A69 /* DingTalkDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DingTalkDylib.mm; sourceTree = "<group>"; };
+		8483442F1F7A6181009D5A69 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
+		848344311F7A6181009D5A69 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
+		84B3360E1FC6A96200445D4F /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		84B336191FC6AFAE00445D4F /* DTWIFIHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWIFIHook.h; sourceTree = "<group>"; };
+		84B3361A1FC6AFAE00445D4F /* DTWIFIHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWIFIHook.m; sourceTree = "<group>"; };
+		84B3361C1FC6AFAE00445D4F /* DTWifiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiModel.h; sourceTree = "<group>"; };
+		84B3361D1FC6AFAE00445D4F /* DTWifiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiModel.m; sourceTree = "<group>"; };
+		84B3361E1FC6AFAE00445D4F /* DTWifiSettingSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiSettingSession.h; sourceTree = "<group>"; };
+		84B3361F1FC6AFAE00445D4F /* DTWifiSettingSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiSettingSession.m; sourceTree = "<group>"; };
+		84B336211FC6AFAE00445D4F /* DTWifiSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiSettingViewController.h; sourceTree = "<group>"; };
+		84B336221FC6AFAE00445D4F /* DTWifiSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiSettingViewController.m; sourceTree = "<group>"; };
+		84B3363B1FC6AFAE00445D4F /* DTGPSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSSettingViewController.h; sourceTree = "<group>"; };
+		84B3363C1FC6AFAE00445D4F /* DTGPSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSSettingViewController.m; sourceTree = "<group>"; };
+		84B3363F1FC6AFAE00445D4F /* DTGPSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSButton.h; sourceTree = "<group>"; };
+		84B336401FC6AFAE00445D4F /* DTGPSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSButton.m; sourceTree = "<group>"; };
+		84B336421FC6AFAE00445D4F /* DTWifiHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiHeaderView.h; sourceTree = "<group>"; };
+		84B336431FC6AFAE00445D4F /* DTWifiHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiHeaderView.m; sourceTree = "<group>"; };
+		84B336611FC6B2CB00445D4F /* JF_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JF_Helper.h; sourceTree = "<group>"; };
+		84B336621FC6B2CB00445D4F /* JF_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JF_Helper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848343F21F7A6181009D5A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848344031F7A6181009D5A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8483440E1F7A6181009D5A69 /* JavaScriptCore.framework in Frameworks */,
+				848344101F7A6181009D5A69 /* RevealServer.framework in Frameworks */,
+				8483440C1F7A6181009D5A69 /* Cycript.framework in Frameworks */,
+				848344121F7A6181009D5A69 /* Foundation.framework in Frameworks */,
+				848344141F7A6181009D5A69 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8401C0A31FC6B5620011E47F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8401C0A41FC6B5620011E47F /* CameraSettingViewController */,
+				8401C0A71FC6B5620011E47F /* DTCameraHook.h */,
+				8401C0A81FC6B5620011E47F /* DTCameraHook.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		8401C0A41FC6B5620011E47F /* CameraSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8401C0A51FC6B5620011E47F /* DTCameraSettingViewController.h */,
+				8401C0A61FC6B5620011E47F /* DTCameraSettingViewController.m */,
+			);
+			path = CameraSettingViewController;
+			sourceTree = "<group>";
+		};
+		8401C0AD1FC6B61F0011E47F /* QBImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				8401C0AE1FC6B61F0011E47F /* Assets */,
+				8401C0B21FC6B61F0011E47F /* Classes */,
+			);
+			path = QBImagePickerController;
+			sourceTree = "<group>";
+		};
+		8401C0AE1FC6B61F0011E47F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8401C0AF1FC6B61F0011E47F /* QBImagePickerController.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8401C0B21FC6B61F0011E47F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8401C0B31FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.h */,
+				8401C0B41FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.m */,
+				8401C0B51FC6B61F0011E47F /* QBAssetsCollectionFooterView.h */,
+				8401C0B61FC6B61F0011E47F /* QBAssetsCollectionFooterView.m */,
+				8401C0B71FC6B61F0011E47F /* QBAssetsCollectionOverlayView.h */,
+				8401C0B81FC6B61F0011E47F /* QBAssetsCollectionOverlayView.m */,
+				8401C0B91FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.h */,
+				8401C0BA1FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.m */,
+				8401C0BB1FC6B61F0011E47F /* QBAssetsCollectionViewCell.h */,
+				8401C0BC1FC6B61F0011E47F /* QBAssetsCollectionViewCell.m */,
+				8401C0BD1FC6B61F0011E47F /* QBAssetsCollectionViewController.h */,
+				8401C0BE1FC6B61F0011E47F /* QBAssetsCollectionViewController.m */,
+				8401C0BF1FC6B61F0011E47F /* QBAssetsCollectionViewLayout.h */,
+				8401C0C01FC6B61F0011E47F /* QBAssetsCollectionViewLayout.m */,
+				8401C0C11FC6B61F0011E47F /* QBImagePickerController.h */,
+				8401C0C21FC6B61F0011E47F /* QBImagePickerController.m */,
+				8401C0C31FC6B61F0011E47F /* QBImagePickerGroupCell.h */,
+				8401C0C41FC6B61F0011E47F /* QBImagePickerGroupCell.m */,
+				8401C0C51FC6B61F0011E47F /* QBImagePickerThumbnailView.h */,
+				8401C0C61FC6B61F0011E47F /* QBImagePickerThumbnailView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		848343EC1F7A6181009D5A69 = {
+			isa = PBXGroup;
+			children = (
+				848343FA1F7A6181009D5A69 /* DingTalk */,
+				848344151F7A6181009D5A69 /* DingTalkDylib */,
+				8483440A1F7A6181009D5A69 /* Frameworks */,
+				848343F91F7A6181009D5A69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		848343F91F7A6181009D5A69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848343F81F7A6181009D5A69 /* DingTalk.app */,
+				848344061F7A6181009D5A69 /* libDingTalkDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848343FA1F7A6181009D5A69 /* DingTalk */ = {
+			isa = PBXGroup;
+			children = (
+				848343FB1F7A6181009D5A69 /* MethodTraceConfig.plist */,
+				848344001F7A6181009D5A69 /* Info.plist */,
+				848343FD1F7A6181009D5A69 /* TargetApp */,
+			);
+			path = DingTalk;
+			sourceTree = "<group>";
+		};
+		848343FD1F7A6181009D5A69 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				848343FE1F7A6181009D5A69 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		8483440A1F7A6181009D5A69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8483440B1F7A6181009D5A69 /* Cycript.framework */,
+				8483440D1F7A6181009D5A69 /* JavaScriptCore.framework */,
+				8483440F1F7A6181009D5A69 /* RevealServer.framework */,
+				848344111F7A6181009D5A69 /* Foundation.framework */,
+				848344131F7A6181009D5A69 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848344151F7A6181009D5A69 /* DingTalkDylib */ = {
+			isa = PBXGroup;
+			children = (
+				84B336171FC6AF8600445D4F /* HookCenter */,
+				8483442C1F7A6181009D5A69 /* DingTalkDylib.xm */,
+				8483442D1F7A6181009D5A69 /* DingTalkDylib.mm */,
+				8483442F1F7A6181009D5A69 /* DingTalkDylib.h */,
+				848344311F7A6181009D5A69 /* DingTalkDylib.m */,
+				84B3360E1FC6A96200445D4F /* Header.h */,
+				848344161F7A6181009D5A69 /* MethodTrace */,
+				848344211F7A6181009D5A69 /* CaptainHook */,
+				848344241F7A6181009D5A69 /* AntiAntiDebug */,
+				848344271F7A6181009D5A69 /* fishhook */,
+				8483441F1F7A6181009D5A69 /* Supporting Files */,
+			);
+			path = DingTalkDylib;
+			sourceTree = "<group>";
+		};
+		848344161F7A6181009D5A69 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				848344171F7A6181009D5A69 /* ANYMethodLog.h */,
+				848344191F7A6181009D5A69 /* ANYMethodLog.m */,
+				8483441B1F7A6181009D5A69 /* MethodTrace.h */,
+				8483441D1F7A6181009D5A69 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		8483441F1F7A6181009D5A69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				848344201F7A6181009D5A69 /* DingTalkDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		848344211F7A6181009D5A69 /* CaptainHook */ = {
+			isa = PBXGroup;
+			children = (
+				848344221F7A6181009D5A69 /* CaptainHook.h */,
+			);
+			name = CaptainHook;
+			sourceTree = "<group>";
+		};
+		848344241F7A6181009D5A69 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				848344251F7A6181009D5A69 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		848344271F7A6181009D5A69 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				848344281F7A6181009D5A69 /* fishhook.c */,
+				8483442A1F7A6181009D5A69 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		84B336171FC6AF8600445D4F /* HookCenter */ = {
+			isa = PBXGroup;
+			children = (
+				84B336601FC6B2CB00445D4F /* JF_Helper */,
+				84B336371FC6AFAE00445D4F /* GPS */,
+				84B3363D1FC6AFAE00445D4F /* View */,
+				84B336181FC6AFAE00445D4F /* WIFI */,
+				8401C0A31FC6B5620011E47F /* Camera */,
+			);
+			path = HookCenter;
+			sourceTree = "<group>";
+		};
+		84B336181FC6AFAE00445D4F /* WIFI */ = {
+			isa = PBXGroup;
+			children = (
+				84B336191FC6AFAE00445D4F /* DTWIFIHook.h */,
+				84B3361A1FC6AFAE00445D4F /* DTWIFIHook.m */,
+				84B3361B1FC6AFAE00445D4F /* Model */,
+				84B336201FC6AFAE00445D4F /* WIFISettingViewController */,
+			);
+			path = WIFI;
+			sourceTree = "<group>";
+		};
+		84B3361B1FC6AFAE00445D4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B3361C1FC6AFAE00445D4F /* DTWifiModel.h */,
+				84B3361D1FC6AFAE00445D4F /* DTWifiModel.m */,
+				84B3361E1FC6AFAE00445D4F /* DTWifiSettingSession.h */,
+				84B3361F1FC6AFAE00445D4F /* DTWifiSettingSession.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84B336201FC6AFAE00445D4F /* WIFISettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84B336211FC6AFAE00445D4F /* DTWifiSettingViewController.h */,
+				84B336221FC6AFAE00445D4F /* DTWifiSettingViewController.m */,
+			);
+			path = WIFISettingViewController;
+			sourceTree = "<group>";
+		};
+		84B336371FC6AFAE00445D4F /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				84B3363A1FC6AFAE00445D4F /* GPSSettingViewController */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+		84B3363A1FC6AFAE00445D4F /* GPSSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84B3363B1FC6AFAE00445D4F /* DTGPSSettingViewController.h */,
+				84B3363C1FC6AFAE00445D4F /* DTGPSSettingViewController.m */,
+			);
+			path = GPSSettingViewController;
+			sourceTree = "<group>";
+		};
+		84B3363D1FC6AFAE00445D4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B3363E1FC6AFAE00445D4F /* DTGPSButton */,
+				84B336411FC6AFAE00445D4F /* DTWifiHeaderView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84B3363E1FC6AFAE00445D4F /* DTGPSButton */ = {
+			isa = PBXGroup;
+			children = (
+				84B3363F1FC6AFAE00445D4F /* DTGPSButton.h */,
+				84B336401FC6AFAE00445D4F /* DTGPSButton.m */,
+			);
+			path = DTGPSButton;
+			sourceTree = "<group>";
+		};
+		84B336411FC6AFAE00445D4F /* DTWifiHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				84B336421FC6AFAE00445D4F /* DTWifiHeaderView.h */,
+				84B336431FC6AFAE00445D4F /* DTWifiHeaderView.m */,
+			);
+			path = DTWifiHeaderView;
+			sourceTree = "<group>";
+		};
+		84B336601FC6B2CB00445D4F /* JF_Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84B336611FC6B2CB00445D4F /* JF_Helper.h */,
+				84B336621FC6B2CB00445D4F /* JF_Helper.m */,
+				8401C09B1FC6B4350011E47F /* UIImage+JFUtil.h */,
+				8401C09C1FC6B4350011E47F /* UIImage+JFUtil.m */,
+				8401C09F1FC6B5470011E47F /* ALAsset+JFUtil.h */,
+				8401C0A01FC6B5470011E47F /* ALAsset+JFUtil.m */,
+				8401C0AD1FC6B61F0011E47F /* QBImagePickerController */,
+			);
+			path = JF_Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		848344041F7A6181009D5A69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848344181F7A6181009D5A69 /* ANYMethodLog.h in Headers */,
+				8401C0CD1FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.h in Headers */,
+				8401C09D1FC6B4350011E47F /* UIImage+JFUtil.h in Headers */,
+				8401C0A91FC6B5620011E47F /* DTCameraSettingViewController.h in Headers */,
+				8401C0CB1FC6B61F0011E47F /* QBAssetsCollectionOverlayView.h in Headers */,
+				8401C0D11FC6B61F0011E47F /* QBAssetsCollectionViewController.h in Headers */,
+				84B3365A1FC6AFAE00445D4F /* DTGPSSettingViewController.h in Headers */,
+				84B336441FC6AFAE00445D4F /* DTWIFIHook.h in Headers */,
+				84B3364A1FC6AFAE00445D4F /* DTWifiSettingViewController.h in Headers */,
+				8401C0D91FC6B61F0011E47F /* QBImagePickerThumbnailView.h in Headers */,
+				848344301F7A6181009D5A69 /* DingTalkDylib.h in Headers */,
+				84B3365C1FC6AFAE00445D4F /* DTGPSButton.h in Headers */,
+				848344231F7A6181009D5A69 /* CaptainHook.h in Headers */,
+				84B336131FC6A96200445D4F /* Header.h in Headers */,
+				84B336631FC6B2CB00445D4F /* JF_Helper.h in Headers */,
+				8401C0D71FC6B61F0011E47F /* QBImagePickerGroupCell.h in Headers */,
+				8483441C1F7A6181009D5A69 /* MethodTrace.h in Headers */,
+				8401C0C91FC6B61F0011E47F /* QBAssetsCollectionFooterView.h in Headers */,
+				8401C0AB1FC6B5620011E47F /* DTCameraHook.h in Headers */,
+				8401C0D51FC6B61F0011E47F /* QBImagePickerController.h in Headers */,
+				84B3365E1FC6AFAE00445D4F /* DTWifiHeaderView.h in Headers */,
+				8401C0A11FC6B5470011E47F /* ALAsset+JFUtil.h in Headers */,
+				8401C0CF1FC6B61F0011E47F /* QBAssetsCollectionViewCell.h in Headers */,
+				8401C0D31FC6B61F0011E47F /* QBAssetsCollectionViewLayout.h in Headers */,
+				8401C0C71FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.h in Headers */,
+				84B336481FC6AFAE00445D4F /* DTWifiSettingSession.h in Headers */,
+				8483442B1F7A6181009D5A69 /* fishhook.h in Headers */,
+				84B336461FC6AFAE00445D4F /* DTWifiModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		848343F71F7A6181009D5A69 /* DingTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848344381F7A6181009D5A69 /* Build configuration list for PBXNativeTarget "DingTalk" */;
+			buildPhases = (
+				848343F11F7A6181009D5A69 /* Sources */,
+				848343F21F7A6181009D5A69 /* Frameworks */,
+				848343F31F7A6181009D5A69 /* ShellScript */,
+				848343F41F7A6181009D5A69 /* Resources */,
+				848343F51F7A6181009D5A69 /* CopyFiles */,
+				848343F61F7A6181009D5A69 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848344091F7A6181009D5A69 /* PBXTargetDependency */,
+			);
+			name = DingTalk;
+			productName = DingTalk;
+			productReference = 848343F81F7A6181009D5A69 /* DingTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		848344051F7A6181009D5A69 /* DingTalkDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848344351F7A6181009D5A69 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */;
+			buildPhases = (
+				848344011F7A6181009D5A69 /* ShellScript */,
+				848344021F7A6181009D5A69 /* Sources */,
+				848344031F7A6181009D5A69 /* Frameworks */,
+				848344041F7A6181009D5A69 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingTalkDylib;
+			productName = DingTalkDylib;
+			productReference = 848344061F7A6181009D5A69 /* libDingTalkDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848343ED1F7A6181009D5A69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = ahaschool;
+				TargetAttributes = {
+					848343F71F7A6181009D5A69 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					848344051F7A6181009D5A69 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 848343F01F7A6181009D5A69 /* Build configuration list for PBXProject "DingTalk" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = 848343EC1F7A6181009D5A69;
+			productRefGroup = 848343F91F7A6181009D5A69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848343F71F7A6181009D5A69 /* DingTalk */,
+				848344051F7A6181009D5A69 /* DingTalkDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848343F41F7A6181009D5A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848343FF1F7A6181009D5A69 /* put ipa or app here in Resources */,
+				848343FC1F7A6181009D5A69 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		848343F31F7A6181009D5A69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		848343F61F7A6181009D5A69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		848344011F7A6181009D5A69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848343F11F7A6181009D5A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848344021F7A6181009D5A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B3365F1FC6AFAE00445D4F /* DTWifiHeaderView.m in Sources */,
+				8401C0AC1FC6B5620011E47F /* DTCameraHook.m in Sources */,
+				8401C0AA1FC6B5620011E47F /* DTCameraSettingViewController.m in Sources */,
+				8401C0A21FC6B5470011E47F /* ALAsset+JFUtil.m in Sources */,
+				84B3365D1FC6AFAE00445D4F /* DTGPSButton.m in Sources */,
+				84B3364B1FC6AFAE00445D4F /* DTWifiSettingViewController.m in Sources */,
+				8401C0D61FC6B61F0011E47F /* QBImagePickerController.m in Sources */,
+				8401C0D21FC6B61F0011E47F /* QBAssetsCollectionViewController.m in Sources */,
+				848344321F7A6181009D5A69 /* DingTalkDylib.m in Sources */,
+				8483442E1F7A6181009D5A69 /* DingTalkDylib.mm in Sources */,
+				8401C0DA1FC6B61F0011E47F /* QBImagePickerThumbnailView.m in Sources */,
+				84B336641FC6B2CB00445D4F /* JF_Helper.m in Sources */,
+				84B3365B1FC6AFAE00445D4F /* DTGPSSettingViewController.m in Sources */,
+				848344261F7A6181009D5A69 /* AntiAntiDebug.m in Sources */,
+				8401C0C81FC6B61F0011E47F /* QBAssetsCollectionCheckmarkView.m in Sources */,
+				84B336451FC6AFAE00445D4F /* DTWIFIHook.m in Sources */,
+				8401C0D81FC6B61F0011E47F /* QBImagePickerGroupCell.m in Sources */,
+				84B336471FC6AFAE00445D4F /* DTWifiModel.m in Sources */,
+				8483441E1F7A6181009D5A69 /* MethodTrace.m in Sources */,
+				8401C09E1FC6B4350011E47F /* UIImage+JFUtil.m in Sources */,
+				848344291F7A6181009D5A69 /* fishhook.c in Sources */,
+				8401C0CA1FC6B61F0011E47F /* QBAssetsCollectionFooterView.m in Sources */,
+				8401C0CE1FC6B61F0011E47F /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
+				8401C0D41FC6B61F0011E47F /* QBAssetsCollectionViewLayout.m in Sources */,
+				8401C0CC1FC6B61F0011E47F /* QBAssetsCollectionOverlayView.m in Sources */,
+				8483441A1F7A6181009D5A69 /* ANYMethodLog.m in Sources */,
+				8401C0D01FC6B61F0011E47F /* QBAssetsCollectionViewCell.m in Sources */,
+				84B336491FC6AFAE00445D4F /* DTWifiSettingSession.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848344091F7A6181009D5A69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 848344051F7A6181009D5A69 /* DingTalkDylib */;
+			targetProxy = 848344081F7A6181009D5A69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8401C0AF1FC6B61F0011E47F /* QBImagePickerController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8401C0B01FC6B61F0011E47F /* en */,
+				8401C0B11FC6B61F0011E47F /* ja */,
+			);
+			name = QBImagePickerController.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848344331F7A6181009D5A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		848344341F7A6181009D5A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848344361F7A6181009D5A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NK26XTE96R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		848344371F7A6181009D5A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = NK26XTE96R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		848344391F7A6181009D5A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 825DHE6NL9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DingTalk/Info.plist;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6f7eb5e7-d745-4f08-b358-6f3ffe03de83";
+				PROVISIONING_PROFILE_SPECIFIER = westudy_team;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8483443A1F7A6181009D5A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 825DHE6NL9;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DingTalk/Info.plist;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.ding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ec09d7c6-1cc8-44c3-a446-20f88d9848ba";
+				PROVISIONING_PROFILE_SPECIFIER = westudy_team;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848343F01F7A6181009D5A69 /* Build configuration list for PBXProject "DingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848344331F7A6181009D5A69 /* Debug */,
+				848344341F7A6181009D5A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848344351F7A6181009D5A69 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848344361F7A6181009D5A69 /* Debug */,
+				848344371F7A6181009D5A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848344381F7A6181009D5A69 /* Build configuration list for PBXNativeTarget "DingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848344391F7A6181009D5A69 /* Debug */,
+				8483443A1F7A6181009D5A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848343ED1F7A6181009D5A69 /* Project object */;
+}
